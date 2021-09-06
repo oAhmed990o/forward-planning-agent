@@ -1,0 +1,18 @@
+[
+    {
+        "description": "1. Test planning graph mutexes",
+        "advice": "",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/grader/classical_planning/tests/test_my_planning_graph.py\", line 99, in setUp\n    self.cake_pg = PlanningGraph(self.cake_problem, self.cake_problem.initial, serialize=False).fill()\n  File \"/home/grader/classical_planning/workspace/my_planning_graph.py\", line 109, in __init__\n    layer.update_mutexes()\n  File \"/home/grader/classical_planning/layers.py\", line 204, in update_mutexes\n    if self._negation(literalA, literalB):\n  File \"/home/grader/classical_planning/workspace/my_planning_graph.py\", line 75, in _negation\n    raise NotImplementedError\nNotImplementedError\n",
+        "result": "E",
+        "message": "",
+        "rubric_item_id": null
+    },
+    {
+        "description": "2. Test planning graph heuristic implementations",
+        "advice": "",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/grader/classical_planning/__utils.py\", line 135, in test\n    test_fn(*args, **kwargs)\n  File \"/home/grader/classical_planning/__utils.py\", line 73, in test\n    test_fn(*args, **kwargs)\n  File \"/home/grader/classical_planning/__utils.py\", line 354, in func_wrapper\n    return func(self)\n  File \"/home/grader/classical_planning/tests/test_my_planning_graph.py\", line 53, in test_heuristics\n    self._levelsum()\n  File \"/home/grader/classical_planning/tests/test_my_planning_graph.py\", line 58, in _levelsum\n    self.assertEqual(self.cake_problem.h_pg_levelsum(self.cake_node), 1,\n  File \"/home/grader/classical_planning/planning_problem.py\", line 37, in h_pg_levelsum\n    pg = PlanningGraph(self, node.state, serialize=True, ignore_mutexes=True)\n  File \"/home/grader/classical_planning/workspace/my_planning_graph.py\", line 109, in __init__\n    layer.update_mutexes()\n  File \"/home/grader/classical_planning/layers.py\", line 204, in update_mutexes\n    if self._negation(literalA, literalB):\n  File \"/home/grader/classical_planning/workspace/my_planning_graph.py\", line 75, in _negation\n    raise NotImplementedError\nNotImplementedError\n",
+        "result": "E",
+        "message": "",
+        "rubric_item_id": "10733"
+    }
+]
